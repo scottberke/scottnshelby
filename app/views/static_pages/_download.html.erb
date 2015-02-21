@@ -1,0 +1,30 @@
+    <section id="download" class="content-section text-left">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-4 col-lg-offset-0">
+                    <h2>You coming?</h2>
+                    <p>
+                        <div class="input-group margin-bottom-sm">
+  <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+  <input class="form-control" type="text" placeholder="Email address">
+</div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+  </div>
+                       <%= form_tag do %>
+  <%= label_tag(:username, "First Name:") %>
+  <%= text_field_tag(:username) %>
+ <br>
+  <%= label_tag(:password, "Last Name:") %>
+  <%= password_field_tag(:password) %>
+    <%= label_tag(:password, "Email:") %>
+  <%= password_field_tag(:password) %>
+<%= submit_tag "Send", class: "btn btn-large btn-primary" %>
+<% end %>
+                    </p>
+                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
+                </div>
+            </div>
+        </div>
+    </section>
